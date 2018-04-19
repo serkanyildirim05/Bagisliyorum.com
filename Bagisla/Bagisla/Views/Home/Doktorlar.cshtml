@@ -1,0 +1,32 @@
+﻿@model List<Bagisla.Models.Doktorlar>
+@{
+    ViewBag.Title = "Doktorlar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@foreach (var item in Model)
+{
+    <div class="">
+        <ul class="" data-sort-id="portfolio">
+            <li class="col-md-3">
+                <div class="">
+                    <a href="portfolio-single-small-slider.html">
+                        <span class="thumb-info thumb-info-lighten">
+                            <span class="thumb-info-wrapper">
+                                <img src="~/Content/img/projects/project.jpg" class="img-responsive" alt="">
+                                <span class="thumb-info-title">
+                                    <span class="thumb-info-inner">@item.Ad</span>
+                                    <span class="thumb-info-type">@item.Soyad</span>
+                                </span>
+                                <span class="thumb-info-action">
+                                    <span class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                </ul>
+        </div>
+
+ }

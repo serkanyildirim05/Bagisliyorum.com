@@ -1,0 +1,24 @@
+﻿@model List<Bagisla.Models.SSS >
+@{
+    ViewBag.Title = "SSS";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var item in Model)
+{
+    <div class="col-md-12">
+
+        <div class="toggle toggle-primary" data-plugin-toggle>
+            <section class="toggle active">
+                <label>@item.Soru</label>
+                <p>@item.Cevap</p>
+            </section>
+
+
+        </div>
+
+    </div>
+
+
+}
+
