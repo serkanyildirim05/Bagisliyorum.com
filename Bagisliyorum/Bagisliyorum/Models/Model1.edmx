@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="BagislarDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="BagisVeren">
+          <Key>
+            <PropertyRef Name="Bagis_No" />
+          </Key>
+          <Property Name="Bagis_No" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kull_Adi" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Ad" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Soyad" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Sifre" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Dogum_Tarihi" Type="datetime" Nullable="false" />
+          <Property Name="Fotograf" Type="varchar" MaxLength="20" />
+          <Property Name="Video" Type="varchar" MaxLength="20" />
+          <Property Name="TC_No" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Miktar" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="Kull_No" Type="int" Nullable="false" />
+          <Property Name="Hasta_No" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Hastalar">
+          <Key>
+            <PropertyRef Name="Hasta_No" />
+          </Key>
+          <Property Name="Hasta_No" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kull_Adi" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Ad" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Soyad" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Sifre" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Dogum_Tarihi" Type="datetime" Nullable="false" />
+          <Property Name="Fotograf" Type="varchar" MaxLength="20" />
+          <Property Name="Video" Type="varchar" MaxLength="20" />
+          <Property Name="TC_No" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Saglik_Durumu" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Miktar" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="Kull_No" Type="int" Nullable="false" />
+          <Property Name="Bagis_No" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Hastaliklar">
+          <Key>
+            <PropertyRef Name="HNo" />
+          </Key>
+          <Property Name="HNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="HastalikAdi" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="Aciklama" Type="varchar" MaxLength="100" />
+          <Property Name="Hasta_No" Type="int" Nullable="false" />
+          <Property Name="Kull_No" Type="int" Nullable="false" />
+          <Property Name="Bagis_No" Type="int" Nullable="false" />
+          <Property Name="INo" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Iletisim">
+          <Key>
+            <PropertyRef Name="INo" />
+          </Key>
+          <Property Name="INo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hasta_No" Type="int" Nullable="false" />
+          <Property Name="Kull_No" Type="int" Nullable="false" />
+          <Property Name="Bagis_No" Type="int" Nullable="false" />
+          <Property Name="TelNo" Type="varchar" MaxLength="11" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Kullanicilar">
+          <Key>
+            <PropertyRef Name="Kull_No" />
+          </Key>
+          <Property Name="Kull_No" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kull_Adi" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Ad" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Soyad" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Sifre" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Kull_Turu" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Hasta_No" Type="int" Nullable="false" />
+          <Property Name="Bagis_No" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SSS">
+          <Key>
+            <PropertyRef Name="Soru_id" />
+          </Key>
+          <Property Name="Soru_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Soru" Type="varchar" MaxLength="140" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="BagislarDBModelStoreContainer">
+          <EntitySet Name="BagisVeren" EntityType="Self.BagisVeren" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Hastalar" EntityType="Self.Hastalar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Hastaliklar" EntityType="Self.Hastaliklar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Iletisim" EntityType="Self.Iletisim" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Kullanicilar" EntityType="Self.Kullanicilar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SSS" EntityType="Self.SSS" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BagislarDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="BagisVeren">
+          <Key>
+            <PropertyRef Name="Bagis_No" />
+          </Key>
+          <Property Name="Bagis_No" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kull_Adi" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Ad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Soyad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Sifre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Dogum_Tarihi" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Fotograf" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Video" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="TC_No" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Miktar" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="Kull_No" Type="Int32" Nullable="false" />
+          <Property Name="Hasta_No" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Hastalar">
+          <Key>
+            <PropertyRef Name="Hasta_No" />
+          </Key>
+          <Property Name="Hasta_No" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kull_Adi" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Ad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Soyad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Sifre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Dogum_Tarihi" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Fotograf" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Video" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="TC_No" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Saglik_Durumu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Miktar" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="Kull_No" Type="Int32" Nullable="false" />
+          <Property Name="Bagis_No" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Hastaliklar">
+          <Key>
+            <PropertyRef Name="HNo" />
+          </Key>
+          <Property Name="HNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="HastalikAdi" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Aciklama" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Hasta_No" Type="Int32" Nullable="false" />
+          <Property Name="Kull_No" Type="Int32" Nullable="false" />
+          <Property Name="Bagis_No" Type="Int32" Nullable="false" />
+          <Property Name="INo" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Iletisim">
+          <Key>
+            <PropertyRef Name="INo" />
+          </Key>
+          <Property Name="INo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hasta_No" Type="Int32" Nullable="false" />
+          <Property Name="Kull_No" Type="Int32" Nullable="false" />
+          <Property Name="Bagis_No" Type="Int32" Nullable="false" />
+          <Property Name="TelNo" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Kullanicilar">
+          <Key>
+            <PropertyRef Name="Kull_No" />
+          </Key>
+          <Property Name="Kull_No" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kull_Adi" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Ad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Soyad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Sifre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Kull_Turu" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Hasta_No" Type="Int32" Nullable="false" />
+          <Property Name="Bagis_No" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SSS">
+          <Key>
+            <PropertyRef Name="Soru_id" />
+          </Key>
+          <Property Name="Soru_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Soru" Type="String" MaxLength="140" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="BagislarDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BagisVerens" EntityType="Self.BagisVeren" />
+          <EntitySet Name="Hastalars" EntityType="Self.Hastalar" />
+          <EntitySet Name="Hastaliklars" EntityType="Self.Hastaliklar" />
+          <EntitySet Name="Iletisims" EntityType="Self.Iletisim" />
+          <EntitySet Name="Kullanicilars" EntityType="Self.Kullanicilar" />
+          <EntitySet Name="SSSes" EntityType="Self.SSS" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BagislarDBModelStoreContainer" CdmEntityContainer="BagislarDBEntities">
+          <EntitySetMapping Name="BagisVerens">
+            <EntityTypeMapping TypeName="BagislarDBModel.BagisVeren">
+              <MappingFragment StoreEntitySet="BagisVeren">
+                <ScalarProperty Name="Bagis_No" ColumnName="Bagis_No" />
+                <ScalarProperty Name="Kull_Adi" ColumnName="Kull_Adi" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="Dogum_Tarihi" ColumnName="Dogum_Tarihi" />
+                <ScalarProperty Name="Fotograf" ColumnName="Fotograf" />
+                <ScalarProperty Name="Video" ColumnName="Video" />
+                <ScalarProperty Name="TC_No" ColumnName="TC_No" />
+                <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+                <ScalarProperty Name="Kull_No" ColumnName="Kull_No" />
+                <ScalarProperty Name="Hasta_No" ColumnName="Hasta_No" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Hastalars">
+            <EntityTypeMapping TypeName="BagislarDBModel.Hastalar">
+              <MappingFragment StoreEntitySet="Hastalar">
+                <ScalarProperty Name="Hasta_No" ColumnName="Hasta_No" />
+                <ScalarProperty Name="Kull_Adi" ColumnName="Kull_Adi" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="Dogum_Tarihi" ColumnName="Dogum_Tarihi" />
+                <ScalarProperty Name="Fotograf" ColumnName="Fotograf" />
+                <ScalarProperty Name="Video" ColumnName="Video" />
+                <ScalarProperty Name="TC_No" ColumnName="TC_No" />
+                <ScalarProperty Name="Saglik_Durumu" ColumnName="Saglik_Durumu" />
+                <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+                <ScalarProperty Name="Kull_No" ColumnName="Kull_No" />
+                <ScalarProperty Name="Bagis_No" ColumnName="Bagis_No" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Hastaliklars">
+            <EntityTypeMapping TypeName="BagislarDBModel.Hastaliklar">
+              <MappingFragment StoreEntitySet="Hastaliklar">
+                <ScalarProperty Name="HNo" ColumnName="HNo" />
+                <ScalarProperty Name="HastalikAdi" ColumnName="HastalikAdi" />
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+                <ScalarProperty Name="Hasta_No" ColumnName="Hasta_No" />
+                <ScalarProperty Name="Kull_No" ColumnName="Kull_No" />
+                <ScalarProperty Name="Bagis_No" ColumnName="Bagis_No" />
+                <ScalarProperty Name="INo" ColumnName="INo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Iletisims">
+            <EntityTypeMapping TypeName="BagislarDBModel.Iletisim">
+              <MappingFragment StoreEntitySet="Iletisim">
+                <ScalarProperty Name="INo" ColumnName="INo" />
+                <ScalarProperty Name="Hasta_No" ColumnName="Hasta_No" />
+                <ScalarProperty Name="Kull_No" ColumnName="Kull_No" />
+                <ScalarProperty Name="Bagis_No" ColumnName="Bagis_No" />
+                <ScalarProperty Name="TelNo" ColumnName="TelNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Kullanicilars">
+            <EntityTypeMapping TypeName="BagislarDBModel.Kullanicilar">
+              <MappingFragment StoreEntitySet="Kullanicilar">
+                <ScalarProperty Name="Kull_No" ColumnName="Kull_No" />
+                <ScalarProperty Name="Kull_Adi" ColumnName="Kull_Adi" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="Kull_Turu" ColumnName="Kull_Turu" />
+                <ScalarProperty Name="Hasta_No" ColumnName="Hasta_No" />
+                <ScalarProperty Name="Bagis_No" ColumnName="Bagis_No" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SSSes">
+            <EntityTypeMapping TypeName="BagislarDBModel.SSS">
+              <MappingFragment StoreEntitySet="SSS">
+                <ScalarProperty Name="Soru_id" ColumnName="Soru_id" />
+                <ScalarProperty Name="Soru" ColumnName="Soru" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

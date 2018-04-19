@@ -1,0 +1,19 @@
+﻿@model List<Bagisliyorum.Models.Hastalar>
+@{
+    int i = 0;
+}
+<div class="title_box">HastaListesi</div>
+<ul class="left_menu">
+    @foreach (var item in Model)
+    {
+        if (i % 2 == 0)
+        {
+            <li class="odd"><a href="#">@item.Hasta_No</a></li>
+        }
+        else
+        {
+            <li class="even"><a href="#">@item.Hasta_No</a></li>
+        }
+        i++;
+    }
+</ul>
