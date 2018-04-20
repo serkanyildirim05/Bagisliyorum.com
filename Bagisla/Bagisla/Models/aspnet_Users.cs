@@ -34,6 +34,10 @@ namespace Bagisla.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<aspnet_PersonalizationPerUser> aspnet_PersonalizationPerUser { get; set; }
         public virtual aspnet_Profile aspnet_Profile { get; set; }
+        public virtual BagisciDetay BagisciDetay { get; set; }
+        public virtual DoktorDetay DoktorDetay { get; set; }
+        public virtual HastaDetay HastaDetay { get; set; }
+        public virtual Mesajlar Mesajlar { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<aspnet_Roles> aspnet_Roles { get; set; }
     }

@@ -27,6 +27,7 @@ namespace Bagisla.Models
 
         public string Ad { get; set; }
         public string Soyad { get; set; }
+        public string Yas { get; set; }
 
 
     }

@@ -35,9 +35,7 @@ namespace Bagisla.Controllers
                 {
                     if (model.Bagisci == true)
                     {
-
-                       
-                        Roles.AddUserToRole(User.UserName, "bagisci");
+                        Roles.AddUserToRole(User.UserName, "Bagisci");
                     }
                     return RedirectToAction("Index", "Home");
                 }

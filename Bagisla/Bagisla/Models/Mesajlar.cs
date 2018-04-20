@@ -14,25 +14,13 @@ namespace Bagisla.Models
     
     public partial class Mesajlar
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Mesajlar()
-        {
-            this.Iletisims = new HashSet<Iletisim>();
-        }
-    
-        public int MesajNo { get; set; }
-        public string Mesaj { get; set; }
-        public Nullable<int> Hasta_No { get; set; }
-        public Nullable<int> Bagis_No { get; set; }
-        public Nullable<int> INo { get; set; }
+        public System.Guid ID { get; set; }
         public string Ad { get; set; }
+        public string Soyad { get; set; }
         public string Email { get; set; }
         public string Konu { get; set; }
+        public string Aciklama { get; set; }
     
-        public virtual BagisVeren BagisVeren { get; set; }
-        public virtual Hastalar Hastalar { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Iletisim> Iletisims { get; set; }
-        public virtual Iletisim Iletisim { get; set; }
+        public virtual aspnet_Users aspnet_Users { get; set; }
     }
 }

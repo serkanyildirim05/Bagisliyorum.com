@@ -15,7 +15,7 @@ namespace Bagisla.Controllers
         HastaRepository hr = new HastaRepository();
         public ActionResult HastaGetir()
         {
-            List<Hastalar> hastaList = new List<Hastalar>();
+            List<HastaDetay> hastaList = new List<HastaDetay>();
             hastaList = hr.GetHastalar();
 
             return View(hastaList);

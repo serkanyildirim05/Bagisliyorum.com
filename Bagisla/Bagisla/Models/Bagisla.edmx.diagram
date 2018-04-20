@@ -4,44 +4,37 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="09013c37f0ed4d9a8d1b3a3d328d0637" Name="Diagram1">
-        <EntityTypeShape EntityType="BagislarDBModel.BagisVeren" Width="1.5" PointX="5.25" PointY="2.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="BagislarDBModel.Doktorlar" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="BagislarDBModel.Hastalar" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="BagislarDBModel.Iletisim" Width="1.5" PointX="7.5" PointY="3.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="BagislarDBModel.Mesajlar" Width="1.5" PointX="10.5" PointY="3.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="BagislarDBModel.Raporlar" Width="1.5" PointX="5.25" PointY="6.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="BagislarDBModel.SSS" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="BagislarDBModel.sysdiagram" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
-        <AssociationConnector Association="BagislarDBModel.FK_BagisVeren_Hastalar" ManuallyRouted="false" />
-        <AssociationConnector Association="BagislarDBModel.FK_BagisVeren_Iletisim" ManuallyRouted="false" />
-        <AssociationConnector Association="BagislarDBModel.FK_BagisVeren_Mesajlar" ManuallyRouted="false" />
-        <AssociationConnector Association="BagislarDBModel.FK_Hastalar_Doktorlar" ManuallyRouted="false" />
-        <AssociationConnector Association="BagislarDBModel.FK_Hastalar_Iletisim" ManuallyRouted="false" />
-        <AssociationConnector Association="BagislarDBModel.FK_Hastalar_Mesajlar" ManuallyRouted="false" />
-        <AssociationConnector Association="BagislarDBModel.FK_Hastalar_Raporlar" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="BagislarDBModel.aspnet_Applications" Width="1.5" PointX="7.75" PointY="14.875" />
-        <EntityTypeShape EntityType="BagislarDBModel.aspnet_Membership" Width="1.5" PointX="15" PointY="13.5" />
-        <EntityTypeShape EntityType="BagislarDBModel.aspnet_Paths" Width="1.5" PointX="10" PointY="13.375" />
-        <EntityTypeShape EntityType="BagislarDBModel.aspnet_PersonalizationAllUsers" Width="1.5" PointX="12.25" PointY="16.875" />
-        <EntityTypeShape EntityType="BagislarDBModel.aspnet_PersonalizationPerUser" Width="1.5" PointX="12.25" PointY="13.375" />
-        <EntityTypeShape EntityType="BagislarDBModel.aspnet_Profile" Width="1.5" PointX="14.5" PointY="20.875" />
-        <EntityTypeShape EntityType="BagislarDBModel.aspnet_Roles" Width="1.5" PointX="10" PointY="22.75" />
-        <EntityTypeShape EntityType="BagislarDBModel.aspnet_SchemaVersions" Width="1.5" PointX="7.75" PointY="7.75" />
-        <EntityTypeShape EntityType="BagislarDBModel.aspnet_Users" Width="1.5" PointX="12.25" PointY="20.375" />
-        <EntityTypeShape EntityType="BagislarDBModel.aspnet_WebEvent_Events" Width="1.5" PointX="0.75" PointY="8.75" />
-        <AssociationConnector Association="BagislarDBModel.FK__aspnet_Me__Appli__19DFD96B" />
-        <AssociationConnector Association="BagislarDBModel.FK__aspnet_Pa__Appli__4B7734FF" />
-        <AssociationConnector Association="BagislarDBModel.FK__aspnet_Ro__Appli__3864608B" />
-        <AssociationConnector Association="BagislarDBModel.FK__aspnet_Us__Appli__09A971A2" />
-        <AssociationConnector Association="BagislarDBModel.FK__aspnet_Me__UserI__1AD3FDA4" />
-        <AssociationConnector Association="BagislarDBModel.FK__aspnet_Pe__PathI__51300E55" />
-        <AssociationConnector Association="BagislarDBModel.FK__aspnet_Pe__PathI__55009F39" />
-        <AssociationConnector Association="BagislarDBModel.FK__aspnet_Pe__UserI__55F4C372" />
-        <AssociationConnector Association="BagislarDBModel.FK__aspnet_Pr__UserI__2EDAF651" />
-        <AssociationConnector Association="BagislarDBModel.FK_Iletisim_Mesajlar" />
-        <AssociationConnector Association="BagislarDBModel.FK_Mesajlar_Iletisim" />
-        <AssociationConnector Association="BagislarDBModel.aspnet_UsersInRoles" />
+      <Diagram DiagramId="e7b310c169d14ae4bd4f1a857b53d621" Name="Diagram1">
+        <EntityTypeShape EntityType="BagislarDBModel.aspnet_Applications" Width="1.5" PointX="0.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BagislarDBModel.aspnet_Membership" Width="1.5" PointX="6" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BagislarDBModel.aspnet_Paths" Width="1.5" PointX="3" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BagislarDBModel.aspnet_PersonalizationAllUsers" Width="1.5" PointX="5.25" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BagislarDBModel.aspnet_PersonalizationPerUser" Width="1.5" PointX="5.25" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BagislarDBModel.aspnet_Profile" Width="1.5" PointX="10.5" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="BagislarDBModel.aspnet_Roles" Width="1.5" PointX="3" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BagislarDBModel.aspnet_SchemaVersions" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BagislarDBModel.aspnet_Users" Width="1.5" PointX="8.25" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BagislarDBModel.aspnet_WebEvent_Events" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BagislarDBModel.BagisciDetay" Width="1.5" PointX="10.5" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="BagislarDBModel.DoktorDetay" Width="1.5" PointX="10.5" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BagislarDBModel.HastaDetay" Width="1.5" PointX="10.5" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BagislarDBModel.Mesajlar" Width="1.5" PointX="10.5" PointY="27.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BagislarDBModel.SSS" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BagislarDBModel.sysdiagram" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="BagislarDBModel.FK__aspnet_Me__Appli__19DFD96B" ManuallyRouted="false" />
+        <AssociationConnector Association="BagislarDBModel.FK__aspnet_Pa__Appli__4B7734FF" ManuallyRouted="false" />
+        <AssociationConnector Association="BagislarDBModel.FK__aspnet_Ro__Appli__3864608B" ManuallyRouted="false" />
+        <AssociationConnector Association="BagislarDBModel.FK__aspnet_Us__Appli__09A971A2" ManuallyRouted="false" />
+        <AssociationConnector Association="BagislarDBModel.FK__aspnet_Me__UserI__1AD3FDA4" ManuallyRouted="false" />
+        <AssociationConnector Association="BagislarDBModel.FK__aspnet_Pe__PathI__51300E55" ManuallyRouted="false" />
+        <AssociationConnector Association="BagislarDBModel.FK__aspnet_Pe__PathI__55009F39" ManuallyRouted="false" />
+        <AssociationConnector Association="BagislarDBModel.FK__aspnet_Pe__UserI__55F4C372" ManuallyRouted="false" />
+        <AssociationConnector Association="BagislarDBModel.FK__aspnet_Pr__UserI__2EDAF651" ManuallyRouted="false" />
+        <AssociationConnector Association="BagislarDBModel.FK_BagisciDetay_aspnet_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BagislarDBModel.FK_DoktorDetay_aspnet_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BagislarDBModel.FK_HastaDetay_aspnet_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BagislarDBModel.FK_Mesajlar_aspnet_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BagislarDBModel.aspnet_UsersInRoles" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

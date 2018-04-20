@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -2307,6 +2308,7 @@
     <Content Include="Content\js\lib\vector-map\vector.init.js" />
     <Content Include="Content\js\lib\weather\jquery.simpleWeather.min.js" />
     <Content Include="Content\js\lib\weather\weather-init.js" />
+    <Content Include="Content\js\RegisterPage.js" />
     <Content Include="Content\js\scripts.js" />
     <Content Include="Content\js\sidebarmenu.js" />
     <Content Include="Content\js\theme.init.js" />
@@ -2584,18 +2586,6 @@
     <Compile Include="Models\aspnet_Membership.cs">
       <DependentUpon>Bagisla.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\aspnet_Membership_GetPasswordWithFormat_Result.cs">
-      <DependentUpon>Bagisla.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\aspnet_Membership_GetPassword_Result.cs">
-      <DependentUpon>Bagisla.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\aspnet_Membership_GetUserByName_Result.cs">
-      <DependentUpon>Bagisla.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\aspnet_Membership_GetUserByUserId_Result.cs">
-      <DependentUpon>Bagisla.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\aspnet_Paths.cs">
       <DependentUpon>Bagisla.tt</DependentUpon>
     </Compile>
@@ -2608,9 +2598,6 @@
     <Compile Include="Models\aspnet_Profile.cs">
       <DependentUpon>Bagisla.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\aspnet_Profile_GetProperties_Result.cs">
-      <DependentUpon>Bagisla.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\aspnet_Roles.cs">
       <DependentUpon>Bagisla.tt</DependentUpon>
     </Compile>
@@ -2620,10 +2607,10 @@
     <Compile Include="Models\aspnet_Users.cs">
       <DependentUpon>Bagisla.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\aspnet_UsersInRoles_RemoveUsersFromRoles_Result.cs">
+    <Compile Include="Models\aspnet_WebEvent_Events.cs">
       <DependentUpon>Bagisla.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\aspnet_WebEvent_Events.cs">
+    <Compile Include="Models\BagisciDetay.cs">
       <DependentUpon>Bagisla.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Bagisla.Context.cs">
@@ -2641,32 +2628,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Bagisla.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\BagisVeren.cs">
+    <Compile Include="Models\DoktorDetay.cs">
       <DependentUpon>Bagisla.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Doktorlar.cs">
-      <DependentUpon>Bagisla.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Hastalar.cs">
-      <DependentUpon>Bagisla.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Iletisim.cs">
+    <Compile Include="Models\HastaDetay.cs">
       <DependentUpon>Bagisla.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\LoginModels.cs" />
     <Compile Include="Models\Mesajlar.cs">
       <DependentUpon>Bagisla.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Raporlar.cs">
-      <DependentUpon>Bagisla.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\RoleModel.cs" />
-    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
-      <DependentUpon>Bagisla.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sp_helpdiagrams_Result.cs">
-      <DependentUpon>Bagisla.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\SSS.cs">
       <DependentUpon>Bagisla.tt</DependentUpon>
     </Compile>
@@ -2993,13 +2965,6 @@
     <Content Include="Content\vendor\simple-line-icons\README.md" />
     <Content Include="Content\vendor\simple-line-icons\scss\simple-line-icons.scss" />
     <Content Include="Content\vendor\simple-line-icons\yarn.lock" />
-    <EntityDeploy Include="Models\Bagisla.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Bagisla.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\Bagisla.edmx.diagram">
-      <DependentUpon>Bagisla.edmx</DependentUpon>
-    </Content>
     <Content Include="Views\Home\Doktorlar.cshtml" />
     <Content Include="Views\Home\Hakkimizda.cshtml" />
     <Content Include="Views\Home\Iletisim.cshtml" />
@@ -3012,6 +2977,13 @@
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Detay.cshtml" />
+    <EntityDeploy Include="Models\Bagisla.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Bagisla.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Bagisla.edmx.diagram">
+      <DependentUpon>Bagisla.edmx</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

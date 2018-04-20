@@ -23,7 +23,7 @@ namespace Bagisla.Controllers
         // GET: Doktor
         public ActionResult Doktorlar()
         {
-            List<Doktorlar> doktorList = new List<Doktorlar>();
+            List<DoktorDetay> doktorList = new List<DoktorDetay>();
             doktorList = dr.GetDoktorlar();
 
             return View(doktorList);

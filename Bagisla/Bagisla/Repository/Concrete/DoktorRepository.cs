@@ -9,16 +9,16 @@ namespace Bagisla.Repository.Concrete
 {
     public class DoktorRepository
     {
-        private IRepository<Doktorlar> _DoktorlarRepository;
+        private IRepository<DoktorDetay> _DoktorlarRepository;
         private IUnitOfWork _DoktorlarUnitofWork;
         private BagislarDBEntities _dbContext;
         public DoktorRepository()
         {
             _dbContext = new BagislarDBEntities();
-            _DoktorlarRepository = new EFRepository<Doktorlar>(_dbContext);
+            _DoktorlarRepository = new EFRepository<DoktorDetay>(_dbContext);
             _DoktorlarUnitofWork = new EFUnitOfWork(_dbContext);
         }
-        public List<Doktorlar> GetDoktorlar()
+        public List<DoktorDetay> GetDoktorlar()
         {
 
             return _DoktorlarRepository.GetAll().ToList();

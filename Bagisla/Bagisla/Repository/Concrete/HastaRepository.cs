@@ -9,16 +9,16 @@ namespace Bagisla.Repository.Concrete
 {
     public class HastaRepository
     {
-        private IRepository<Hastalar> _HastalarRepository;
+        private IRepository<HastaDetay> _HastalarRepository;
         private IUnitOfWork _HastalarUnitofWork;
         private BagislarDBEntities _dbContext;
         public HastaRepository()
         {
             _dbContext = new BagislarDBEntities();
-            _HastalarRepository = new EFRepository<Hastalar>(_dbContext);
+            _HastalarRepository = new EFRepository<HastaDetay>(_dbContext);
             _HastalarUnitofWork = new EFUnitOfWork(_dbContext);
         }
-        public List<Hastalar> GetHastalar()
+        public List<HastaDetay> GetHastalar()
         {
             
             return _HastalarRepository.GetAll().ToList();
