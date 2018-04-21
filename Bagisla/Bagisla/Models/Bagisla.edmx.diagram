@@ -34,6 +34,9 @@
         <AssociationConnector Association="BagislarDBModel.FK__aspnet_Pe__UserI__55F4C372" ManuallyRouted="false" />
         <AssociationConnector Association="BagislarDBModel.FK__aspnet_Pr__UserI__2EDAF651" ManuallyRouted="false" />
         <AssociationConnector Association="BagislarDBModel.aspnet_UsersInRoles" ManuallyRouted="false" />
+        <AssociationConnector Association="BagislarDBModel.FK_HastaDetay_aspnet_Membership" />
+        <AssociationConnector Association="BagislarDBModel.FK_BagisciDetay_aspnet_Membership" />
+        <AssociationConnector Association="BagislarDBModel.FK_DoktorDetay_aspnet_Membership" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -30,5 +30,6 @@ namespace Bagisla.Models
         public Nullable<int> BagisSayisi { get; set; }
     
         public virtual aspnet_Membership aspnet_Membership { get; set; }
+        public virtual aspnet_Membership aspnet_Membership1 { get; set; }
     }
 }

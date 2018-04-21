@@ -25,5 +25,6 @@ namespace Bagisla.Models
         public string ProfilFoto { get; set; }
     
         public virtual aspnet_Membership aspnet_Membership { get; set; }
+        public virtual aspnet_Membership aspnet_Membership1 { get; set; }
     }
 }

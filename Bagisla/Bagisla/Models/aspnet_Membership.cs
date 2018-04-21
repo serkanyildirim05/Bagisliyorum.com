@@ -41,5 +41,8 @@ namespace Bagisla.Models
         public virtual BagisciDetay BagisciDetay { get; set; }
         public virtual DoktorDetay DoktorDetay { get; set; }
         public virtual HastaDetay HastaDetay { get; set; }
+        public virtual HastaDetay HastaDetay1 { get; set; }
+        public virtual BagisciDetay BagisciDetay1 { get; set; }
+        public virtual DoktorDetay DoktorDetay1 { get; set; }
     }
 }

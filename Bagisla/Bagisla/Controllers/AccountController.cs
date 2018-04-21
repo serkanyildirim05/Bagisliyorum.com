@@ -18,74 +18,139 @@ namespace Bagisla.Controllers
 
         //-----------------------------------------------------------------------------------------------//
         [HttpGet]
-        public ActionResult Register()
+        public ActionResult Register(RegisterViewModel model,ModelState state)
         {
-
-            return View();
+            if (TempData["a"]!=null)
+            {
+                foreach (var item in (List<string>)TempData["a"])
+                {
+                    ModelState.AddModelError("", item);
+                }
+            }
+            return View(model);
         }
-
-        //public ActionResult Register(RegisterModel model)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-              
-        //        MembershipCreateStatus status;
-        //        MembershipUser User=  Membership.CreateUser(model.UserName, model.Password, model.Email, "soru", "cevap", true, out status);
-        //        FormsAuthentication.SetAuthCookie(model.UserName, false);
-        //        if (status == MembershipCreateStatus.Success)
-        //        {
-        //            if (model.Bagisci == true)
-        //            {
-        //                Roles.AddUserToRole(User.UserName, "Bagisci");
-        //            }
-        //            return RedirectToAction("Index", "Home");
-        //        }
-        //        else
-        //        {
-        //            ModelState.AddModelError("", status.ToString());
-        //        }
-        //    }
-        //    return View(model);
-        //}
-
         [ValidateAntiForgeryToken]
         [HttpPost]
         public ActionResult BagisciKayit(RegisterViewModel model)
         {
+            if (model.User.Password == model.User.ConfirmPassword)
+            {
+                MembershipCreateStatus status;
+               
+                MembershipUser user = Membership.CreateUser(model.User.Email, model.User.Password,model.User.Email,"soru","cevap",true,out status);
+                switch (status)
+                {
+                    case MembershipCreateStatus.Success:
+                        BagisciRepository br = new BagisciRepository();
+                        model.BD.ID = Guid.Parse(user.ProviderUserKey.ToString());
+                        br.BagisciDetayEkle(model.BD);
+                        
 
-            return RedirectToAction("Register",model);
+                        Roles.AddUserToRole(user.Email, "Bagisci");
+                        return RedirectToAction("Login");
+                    case MembershipCreateStatus.InvalidUserName:
+                        break;
+                    case MembershipCreateStatus.InvalidPassword:
+                        break;
+                    case MembershipCreateStatus.InvalidQuestion:
+                        break;
+                    case MembershipCreateStatus.InvalidAnswer:
+                        break;
+                    case MembershipCreateStatus.InvalidEmail:
+                        break;
+                    case MembershipCreateStatus.DuplicateUserName:
+                        break;
+                    case MembershipCreateStatus.DuplicateEmail:
+                        break;
+                    case MembershipCreateStatus.UserRejected:
+                        break;
+                    case MembershipCreateStatus.InvalidProviderUserKey:
+                        break;
+                    case MembershipCreateStatus.DuplicateProviderUserKey:
+                        break;
+                    case MembershipCreateStatus.ProviderError:
+                        break;
+                    default:
+                        break;
+                }
+              
+            }
+            else
+            {
+              ModelState.AddModelError("", "Şifreler Uyuşmuyor");
+            }
+            List<string> a = new List<string>();
+            foreach (var item in ModelState)
+            {
+                foreach (var item2 in item.Value.Errors)
+                {
+                    a.Add(item2.ErrorMessage);
+                }
+            }
+            TempData["a"] = a;
+            TempData["ModelState"] = ModelState;
+            return RedirectToAction("Register");
+           
+
         }
 
         [ValidateAntiForgeryToken]
         [HttpPost]
         public ActionResult HastaKayit(RegisterViewModel model)
         {
-            HastaRepository _hr =new HastaRepository();
-            if (model.HD!=null)
+            if (model.User.Password == model.User.ConfirmPassword)
             {
-            
-                    RedirectToAction("Register",new {model});
-                
-              
+                MembershipCreateStatus status;
+                MembershipUser user = Membership.CreateUser(model.User.Email, model.User.Password, model.User.Email, "soru", "cevap", true, out status);
+                switch (status)
+                {
+                    case MembershipCreateStatus.Success:
+                        HastaRepository hr = new HastaRepository();
+                        hr.HastaDetayEkle(model.HD);
+                        Roles.AddUserToRole(user.Email, "Hasta");
+                        return RedirectToAction("Login");
+                    case MembershipCreateStatus.InvalidUserName:
+                        break;
+                    case MembershipCreateStatus.InvalidPassword:
+                        break;
+                    case MembershipCreateStatus.InvalidQuestion:
+                        break;
+                    case MembershipCreateStatus.InvalidAnswer:
+                        break;
+                    case MembershipCreateStatus.InvalidEmail:
+                        break;
+                    case MembershipCreateStatus.DuplicateUserName:
+                        break;
+                    case MembershipCreateStatus.DuplicateEmail:
+                        break;
+                    case MembershipCreateStatus.UserRejected:
+                        break;
+                    case MembershipCreateStatus.InvalidProviderUserKey:
+                        break;
+                    case MembershipCreateStatus.DuplicateProviderUserKey:
+                        break;
+                    case MembershipCreateStatus.ProviderError:
+                        break;
+                    default:
+                        break;
+                }
 
-                //MembershipCreateStatus status;
-                //MembershipUser User = Membership.CreateUser(model.UserName, model.Password, model.Email, "soru", "cevap", true, out status);
-                //FormsAuthentication.SetAuthCookie(model.UserName, false);
-                //if (status == MembershipCreateStatus.Success)
-                //{
-                //    if (model.Bagisci == true)
-                //    {
-                //        Roles.AddUserToRole(User.UserName, "Bagisci");
-                //    }
-                //    return RedirectToAction("Index", "Home");
-                //}
-                //else
-                //{
-                //    ModelState.AddModelError("", status.ToString());
-                //}
-                //_hr.HastaDetayEkle(model.HD);
             }
-            return RedirectToAction("Register", model);
+            else
+            {
+                ModelState.AddModelError("", "Şifreler Uyuşmuyor");
+            }
+            List<string> a = new List<string>();
+            foreach (var item in ModelState)
+            {
+                foreach (var item2 in item.Value.Errors)
+                {
+                    a.Add(item2.ErrorMessage);
+                }
+            }
+            TempData["a"] = a;
+            TempData["ModelState"] = ModelState;
+            return RedirectToAction("Register");
         }
         public ActionResult LogOn()
         {
