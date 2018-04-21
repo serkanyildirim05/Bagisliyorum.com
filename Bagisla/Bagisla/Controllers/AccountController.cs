@@ -18,14 +18,10 @@ namespace Bagisla.Controllers
 
         //-----------------------------------------------------------------------------------------------//
         [HttpGet]
-        public ActionResult Register(RegisterModel model)
+        public ActionResult Register()
         {
-            RegisterModel register = new RegisterModel();
-            if (model!=null)
-            {
-                register = model;
-            }
-            return View(register);
+
+            return View();
         }
 
         //public ActionResult Register(RegisterModel model)
