@@ -136,6 +136,7 @@
     <EntitySetMapping Name="BagisciDetays">
       <EntityTypeMapping TypeName="BagislarDBModel.BagisciDetay">
         <MappingFragment StoreEntitySet="BagisciDetay">
+          <ScalarProperty Name="ProfilFoto" ColumnName="ProfilFoto" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Ad" ColumnName="Ad" />
           <ScalarProperty Name="Soyad" ColumnName="Soyad" />

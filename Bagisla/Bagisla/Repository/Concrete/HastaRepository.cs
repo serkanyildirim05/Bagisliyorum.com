@@ -23,6 +23,11 @@ namespace Bagisla.Repository.Concrete
             
             return _HastalarRepository.GetAll().ToList();
         }
+        public int HastaDetayEkle(HastaDetay model)
+        {
+            _HastalarRepository.Insert(model);
+            return _HastalarUnitofWork.SaveChanges();
+        }
 
     }
 }

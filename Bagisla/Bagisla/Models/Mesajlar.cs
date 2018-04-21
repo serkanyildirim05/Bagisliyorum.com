@@ -20,7 +20,5 @@ namespace Bagisla.Models
         public string Email { get; set; }
         public string Konu { get; set; }
         public string Aciklama { get; set; }
-    
-        public virtual aspnet_Users aspnet_Users { get; set; }
     }
 }

@@ -26,6 +26,6 @@ namespace Bagisla.Models
         public string Fotograf { get; set; }
         public string T_C { get; set; }
     
-        public virtual aspnet_Users aspnet_Users { get; set; }
+        public virtual aspnet_Membership aspnet_Membership { get; set; }
     }
 }

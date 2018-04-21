@@ -8,6 +8,8 @@ using System.Web.Mvc;
 using Bagisla.Models;
 using System.Web.Security;
 using System.Collections.Generic;
+using Bagisla.Models.ViewModel;
+using Bagisla.Repository.Concrete;
 
 namespace Bagisla.Controllers
 {
@@ -15,38 +17,80 @@ namespace Bagisla.Controllers
     {
 
         //-----------------------------------------------------------------------------------------------//
-
-        public ActionResult Register()
-        {
-            return View();
-        }
-
-
-        [HttpPost]
+        [HttpGet]
         public ActionResult Register(RegisterModel model)
         {
-            if (ModelState.IsValid)
+            RegisterModel register = new RegisterModel();
+            if (model!=null)
             {
-              
-                MembershipCreateStatus status;
-                MembershipUser User=  Membership.CreateUser(model.UserName, model.Password, model.Email, "soru", "cevap", true, out status);
-                FormsAuthentication.SetAuthCookie(model.UserName, false);
-                if (status == MembershipCreateStatus.Success)
-                {
-                    if (model.Bagisci == true)
-                    {
-                        Roles.AddUserToRole(User.UserName, "Bagisci");
-                    }
-                    return RedirectToAction("Index", "Home");
-                }
-                else
-                {
-                    ModelState.AddModelError("", status.ToString());
-                }
+                register = model;
             }
-            return View(model);
+            return View(register);
         }
 
+        //public ActionResult Register(RegisterModel model)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+              
+        //        MembershipCreateStatus status;
+        //        MembershipUser User=  Membership.CreateUser(model.UserName, model.Password, model.Email, "soru", "cevap", true, out status);
+        //        FormsAuthentication.SetAuthCookie(model.UserName, false);
+        //        if (status == MembershipCreateStatus.Success)
+        //        {
+        //            if (model.Bagisci == true)
+        //            {
+        //                Roles.AddUserToRole(User.UserName, "Bagisci");
+        //            }
+        //            return RedirectToAction("Index", "Home");
+        //        }
+        //        else
+        //        {
+        //            ModelState.AddModelError("", status.ToString());
+        //        }
+        //    }
+        //    return View(model);
+        //}
+
+        [ValidateAntiForgeryToken]
+        [HttpPost]
+        public ActionResult BagisciKayit(RegisterViewModel model)
+        {
+
+            return RedirectToAction("Register",model);
+        }
+
+        [ValidateAntiForgeryToken]
+        [HttpPost]
+        public ActionResult HastaKayit(RegisterViewModel model)
+        {
+            HastaRepository _hr =new HastaRepository();
+            if (model.HD!=null)
+            {
+            
+                    RedirectToAction("Register",new {model});
+                
+              
+
+                //MembershipCreateStatus status;
+                //MembershipUser User = Membership.CreateUser(model.UserName, model.Password, model.Email, "soru", "cevap", true, out status);
+                //FormsAuthentication.SetAuthCookie(model.UserName, false);
+                //if (status == MembershipCreateStatus.Success)
+                //{
+                //    if (model.Bagisci == true)
+                //    {
+                //        Roles.AddUserToRole(User.UserName, "Bagisci");
+                //    }
+                //    return RedirectToAction("Index", "Home");
+                //}
+                //else
+                //{
+                //    ModelState.AddModelError("", status.ToString());
+                //}
+                //_hr.HastaDetayEkle(model.HD);
+            }
+            return RedirectToAction("Register", model);
+        }
         public ActionResult LogOn()
         {
             return View();

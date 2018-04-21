@@ -38,5 +38,8 @@ namespace Bagisla.Models
     
         public virtual aspnet_Applications aspnet_Applications { get; set; }
         public virtual aspnet_Users aspnet_Users { get; set; }
+        public virtual BagisciDetay BagisciDetay { get; set; }
+        public virtual DoktorDetay DoktorDetay { get; set; }
+        public virtual HastaDetay HastaDetay { get; set; }
     }
 }

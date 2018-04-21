@@ -22,7 +22,8 @@ namespace Bagisla.Models
         public string Meslek { get; set; }
         public Nullable<System.DateTime> DogumTarihi { get; set; }
         public Nullable<int> BagisSayisi { get; set; }
+        public string ProfilFoto { get; set; }
     
-        public virtual aspnet_Users aspnet_Users { get; set; }
+        public virtual aspnet_Membership aspnet_Membership { get; set; }
     }
 }

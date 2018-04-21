@@ -29,6 +29,6 @@ namespace Bagisla.Models
         public string Fotograf { get; set; }
         public Nullable<int> BagisSayisi { get; set; }
     
-        public virtual aspnet_Users aspnet_Users { get; set; }
+        public virtual aspnet_Membership aspnet_Membership { get; set; }
     }
 }

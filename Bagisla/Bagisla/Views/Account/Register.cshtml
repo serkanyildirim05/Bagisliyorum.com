@@ -1,14 +1,20 @@
-﻿@model Bagisla.Models.RegisterModel
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="~/Content/js/RegisterPage.js"></script>
-<link href="~/Content/css/RegisterPage.css" rel="stylesheet" />
-<!------ Include the above in your HEAD tag ---------->
-@using (Html.BeginForm("Register", "Account", FormMethod.Post))
-{
-    @Html.AntiForgeryToken()
+﻿@model Bagisla.Models.ViewModel.RegisterViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <link href="~/Content/css/RegisterPage.css" rel="stylesheet" />
+</head>
 
+<body>
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
@@ -16,147 +22,159 @@
                     <div class="panel-heading">
                         <div class="row">
                             <div class="col-xs-6">
-                                <a href="#" class="active" id="login-form-link">Hasta</a>
+                                <a href="#" class="active" id="login-form-link">Bağışçı Olarak</a>
                             </div>
                             <div class="col-xs-6">
-                                <a href="#" id="register-form-link">Bağisci</a>
+                                <a href="#" id="register-form-link">Hasta Olarak</a>
                             </div>
                         </div>
+                        <div><h2 class="text-center"> Kayıt Ol</h2></div>
                         <hr>
                     </div>
                     <div class="panel-body">
                         <div class="row">
-                           
-                                <form id="login-form" action="http://phpoll.com/login/process" method="post" role="form" style="display: block;">
-                                    <div class="form-group">
-                                        <label for="ad" class="cols-sm-2 control-label">Ad</label>
-                                        <div class="cols-sm-10">
-                                            <div class="input-group">
-                                                @Html.TextBoxFor(model => model.Ad, new { @class = "form-control", name = "ad", id = "ad", placeholder = "Adinizi Girin" })
+                            <div class="col-lg-12">
+                                @using (Html.BeginForm("BagisciKayit", "Account", FormMethod.Post, new { id = "login-form", style = "" }))
+                                {
+                                    @Html.AntiForgeryToken()
+                                    /**/
+
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.TextBoxFor(m => m.User.Email, new { @class = "form-control", placeholder = "Email Giriniz." })
+                                                @Html.ValidationMessageFor(model => model.User.Email, "", new { @class = "text-danger" })
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="ad" class="cols-sm-2 control-label">Soyad</label>
-                                        <div class="cols-sm-10">
-                                            <div class="input-group">
-                                                @Html.TextBoxFor(model => model.Soyad, new { @class = "form-control", name = "soyad", id = "soyad", placeholder = "Soyadinizi Girin" })
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.PasswordFor(m => m.User.Password, new { @class = "form-control", placeholder = "Parolo Giriniz." })
+                                                @Html.ValidationMessageFor(model => model.User.Password, "", new { @class = "text-danger" })
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email" class="cols-sm-2 control-label">Mailiniz</label>
-                                        <div class="cols-sm-10">
-                                            <div class="input-group">
-                                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control", name = "email", id = "email", placeholder = "Emailinizi Girin" })
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.PasswordFor(m => m.User.ConfirmPassword, new { @class = "form-control", placeholder = "Parolo Tekrar Giriniz." })
+                                                @Html.ValidationMessageFor(model => model.User.ConfirmPassword, "", new { @class = "text-danger" })
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="KullaniciAdi" class="cols-sm-2 control-label">Username</label>
-                                        <div class="cols-sm-10">
-                                            <div class="input-group">
-                                                @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", name = "username", id = "username", placeholder = "Kullanıcı Adınızı Girin" })
+
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.TextBoxFor(m => m.BD.Ad, new { @class = "form-control", placeholder = "Ad Giriniz." })
+                                                @Html.ValidationMessageFor(model => model.BD.Ad, "", new { @class = "text-danger" })
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="sifre" class="cols-sm-2 control-label">Şifre</label>
-                                        <div class="cols-sm-10">
-                                            <div class="input-group">
-                                                @Html.PasswordFor(model => model.Password, new { @class = "form-control", name = "sifre", id = "sifre", placeholder = "Sifrenizi Girin" })
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.TextBoxFor(m => m.BD.Soyad, new { @class = "form-control", placeholder = "Soyad Giriniz" })
+                                                @Html.ValidationMessageFor(model => model.BD.Soyad, "", new { @class = "text-danger" })
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="sifre" class="cols-sm-2 control-label">Şifrenizi Tekrar Girin</label>
-                                        <div class="cols-sm-10">
-                                            <div class="input-group">
-                                                @Html.PasswordFor(model => model.ConfirmPassword, new { @class = "form-control", name = "sifre", id = "sifre", placeholder = "Sifrenizi tekrar Girin" })
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.TextBoxFor(m => m.BD.Tel, new { @class = "form-control", placeholder = "Telefon Numaranızı Giriniz" })
+                                                @Html.ValidationMessageFor(model => model.BD.Tel, "", new { @class = "text-danger" })
+                                            </div>
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.TextBoxFor(m => m.BD.Meslek, new { @class = "form-control", placeholder = "Meslek Giriniz" })
+                                                @Html.ValidationMessageFor(model => model.BD.Meslek, "", new { @class = "text-danger" })
+                                            </div>
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.TextBoxFor(m => m.BD.Adres, new { @class = "form-control", placeholder = "Adres Giriniz" })
+                                                @Html.ValidationMessageFor(model => model.BD.Adres, "", new { @class = "text-danger" })
+                                            </div>
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.TextBoxFor(m => m.BD.DogumTarihi, new { @class = "form-control", placeholder = "Doğum Tarihi Giriniz" })
+                                                @Html.ValidationMessageFor(model => model.BD.DogumTarihi, "", new { @class = "text-danger" })
+
+                                            </div>
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                <button type="submit" class="form-control btn btn-success"><span class="glyphicon glyphicon-log-in"></span> Kayıt Ol</button>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="form-group">
+                                }
+                                @using (Html.BeginForm("HastaKayit", "Account", FormMethod.Post, new { id = "register-form", style = "display:none" }))
+                                {
+                                    /**/
+                                    @Html.AntiForgeryToken()
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.TextBoxFor(m => m.User.Email, new { @class = "form-control", placeholder = "Email Giriniz." })
+                                                @Html.ValidationMessageFor(model => model.User.Email, "", new { @class = "text-danger" })
+                                            </div>
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.PasswordFor(m => m.User.Password, new { @class = "form-control", placeholder = "Parolo Giriniz." })
+                                                @Html.ValidationMessageFor(model => model.User.Password, "", new { @class = "text-danger" })
+                                            </div>
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.PasswordFor(m => m.User.ConfirmPassword, new { @class = "form-control", placeholder = "Parolo Tekrar Giriniz." })
+                                                @Html.ValidationMessageFor(model => model.User.ConfirmPassword, "", new { @class = "text-danger" })
+                                            </div>
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.TextBoxFor(m => m.HD.Ad, new { @class = "form-control", placeholder = "Ad Giriniz" })
+                                                @Html.ValidationMessageFor(model => model.HD.Ad, "", new { @class = "text-danger" })
+                                            </div>
 
-                                        <div class="row">
-                                            <div class="col-sm-6 col-sm-offset-3">
-                                                <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.TextBoxFor(m => m.HD.Soyad, new { @class = "form-control", placeholder = "Soyad Giriniz" })
+                                                @Html.ValidationMessageFor(model => model.BD.Soyad, "", new { @class = "text-danger" })
+                                            </div>
+
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.TextBoxFor(m => m.HD.Yas, new { @class = "form-control", placeholder = "Yaş Giriniz" })
+                                                @Html.ValidationMessageFor(model => model.HD.Yas, "", new { @class = "text-danger" })
+
+
+                                            </div>
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.TextBoxFor(m => m.HD.Cinsiyet, new { @class = "form-control", placeholder = "Cinsiyet" })
+                                                @Html.ValidationMessageFor(model => model.HD.Cinsiyet, "", new { @class = "text-danger" })
+                                            </div>
+
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.TextBoxFor(m => m.HD.DogumTarihi, new { @class = "form-control", placeholder = "Doğum Tarihi Giriniz" })
+                                                @Html.ValidationMessageFor(model => model.HD.DogumTarihi, "", new { @class = "text-danger" })
+                                            </div>
+
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.TextBoxFor(m => m.HD.KanGrubu, new { @class = "form-control", placeholder = "Kan Grubu" })
+                                                @Html.ValidationMessageFor(model => model.HD.KanGrubu, "", new { @class = "text-danger" })
+                                            </div>
+
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.TextBoxFor(m => m.HD.SaglikDurumu, new { @class = "form-control", placeholder = "Sağlık Durumu Giriniz" })
+                                                @Html.ValidationMessageFor(model => model.HD.SaglikDurumu, "", new { @class = "text-danger" })
+                                            </div>
+
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.TextBoxFor(m => m.HD.Meslek, new { @class = "form-control", placeholder = "Meslek Giriniz" })
+                                                @Html.ValidationMessageFor(model => model.HD.Meslek, "", new { @class = "text-danger" })
+                                            </div>
+
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.TextBoxFor(m => m.HD.Adres, new { @class = "form-control", placeholder = "Adres Giriniz" })
+                                                @Html.ValidationMessageFor(model => model.HD.Adres, "", new { @class = "text-danger" })
+                                            </div>
+
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.TextBoxFor(m => m.HD.Il, new { @class = "form-control", placeholder = "İl" })
+                                                @Html.ValidationMessageFor(model => model.HD.Il, "", new { @class = "text-danger" })
+                                            </div>
+
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                @Html.TextBoxFor(m => m.HD.Ilce, new { @class = "form-control", placeholder = "İlçe" })
+                                                @Html.ValidationMessageFor(model => model.HD.Ilce, "", new { @class = "text-danger" })
+                                            </div>
+                                            <div class="col-md-12" style="padding-bottom:10px">
+                                                <button type="submit" class="form-control btn btn-success"><span class="glyphicon glyphicon-log-in"></span> Kayıt Ol</button>
                                             </div>
                                         </div>
                                     </div>
 
-                                </form>
-                                <form id="register-form" action="http://phpoll.com/register/process" method="post" role="form" style="display: none;">
-                                    <div class="form-group">
-                                        <label for="ad" class="cols-sm-2 control-label">Ad</label>
-                                        <div class="cols-sm-10">
-                                            <div class="input-group">
-                                                @Html.TextBoxFor(model => model.Ad, new { @class = "form-control", name = "ad", id = "ad", placeholder = "Adinizi Girin" })
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="ad" class="cols-sm-2 control-label">Soyad</label>
-                                        <div class="cols-sm-10">
-                                            <div class="input-group">
-                                                @Html.TextBoxFor(model => model.Soyad, new { @class = "form-control", name = "soyad", id = "soyad", placeholder = "Soyadinizi Girin" })
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email" class="cols-sm-2 control-label">Mailiniz</label>
-                                        <div class="cols-sm-10">
-                                            <div class="input-group">
-                                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control", name = "email", id = "email", placeholder = "Emailinizi Girin" })
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="KullaniciAdi" class="cols-sm-2 control-label">Username</label>
-                                        <div class="cols-sm-10">
-                                            <div class="input-group">
-                                                @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", name = "username", id = "username", placeholder = "Kullanıcı Adınızı Girin" })
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="sifre" class="cols-sm-2 control-label">Şifre</label>
-                                        <div class="cols-sm-10">
-                                            <div class="input-group">
-                                                @Html.PasswordFor(model => model.Password, new { @class = "form-control", name = "sifre", id = "sifre", placeholder = "Sifrenizi Girin" })
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="sifre" class="cols-sm-2 control-label">Şifrenizi Tekrar Girin</label>
-                                        <div class="cols-sm-10">
-                                            <div class="input-group">
-                                                @Html.PasswordFor(model => model.ConfirmPassword, new { @class = "form-control", name = "sifre", id = "sifre", placeholder = "Sifrenizi tekrar Girin" })
-                                            </div>
-                                        </div>
-                                    </div>
+                                }
 
-                                    <div class="form-group">
-                                        <label for="yas" class="cols-sm-2 control-label">Yaşınızı Girin</label>
-                                        <div class="cols-sm-10">
-                                            <div class="input-group">
-                                                @Html.PasswordFor(model => model.Yas, new { @class = "form-control", name = "yas", id = "yas", placeholder = "Yaşinizi Girin" })
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-sm-6 col-sm-offset-3">
-                                                <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-}
+    </div>
+
+    <script src="~/Content/js/RegisterPage.js"></script>
+</body>
+</html>

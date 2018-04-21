@@ -265,6 +265,7 @@
     <Content Include="Content\dist\css\sb-admin-2.min.css" />
     <Content Include="Content\dist\js\sb-admin-2.js" />
     <Content Include="Content\dist\js\sb-admin-2.min.js" />
+    <Content Include="Content\helpfreely-facebook.jpg" />
     <Content Include="Content\icons\flag-icon-css\flag-icon.min.css" />
     <Content Include="Content\icons\flag-icon-css\flags\ad.svg" />
     <Content Include="Content\icons\flag-icon-css\flags\ae.svg" />
@@ -2645,6 +2646,7 @@
     <Compile Include="Models\sysdiagram.cs">
       <DependentUpon>Bagisla.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ViewModel\RegisterViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\Abstract\IRepository.cs" />
     <Compile Include="Repository\Abstract\IUnitOfWork.cs" />
@@ -2974,9 +2976,9 @@
     <Content Include="Views\PartialView\HastaGetir.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Account\LogOn.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Detay.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
     <EntityDeploy Include="Models\Bagisla.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Bagisla.Designer.cs</LastGenOutput>
