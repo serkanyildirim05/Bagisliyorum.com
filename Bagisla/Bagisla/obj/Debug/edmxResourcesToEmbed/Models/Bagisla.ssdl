@@ -341,6 +341,42 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_BagisciDetay_aspnet_Membership">
+    <End Role="aspnet_Membership" Type="Self.aspnet_Membership" Multiplicity="1" />
+    <End Role="BagisciDetay" Type="Self.BagisciDetay" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Membership">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="BagisciDetay">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DoktorDetay_aspnet_Membership">
+    <End Role="aspnet_Membership" Type="Self.aspnet_Membership" Multiplicity="1" />
+    <End Role="DoktorDetay" Type="Self.DoktorDetay" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Membership">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="DoktorDetay">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HastaDetay_aspnet_Membership">
+    <End Role="aspnet_Membership" Type="Self.aspnet_Membership" Multiplicity="1" />
+    <End Role="HastaDetay" Type="Self.HastaDetay" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Membership">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="HastaDetay">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="BagislarDBModelStoreContainer">
     <EntitySet Name="aspnet_Applications" EntityType="Self.aspnet_Applications" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="aspnet_Membership" EntityType="Self.aspnet_Membership" Schema="dbo" store:Type="Tables" />
@@ -402,6 +438,18 @@
     <AssociationSet Name="FK__aspnet_Us__UserI__3C34F16F" Association="Self.FK__aspnet_Us__UserI__3C34F16F">
       <End Role="aspnet_Users" EntitySet="aspnet_Users" />
       <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BagisciDetay_aspnet_Membership" Association="Self.FK_BagisciDetay_aspnet_Membership">
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+      <End Role="BagisciDetay" EntitySet="BagisciDetay" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DoktorDetay_aspnet_Membership" Association="Self.FK_DoktorDetay_aspnet_Membership">
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+      <End Role="DoktorDetay" EntitySet="DoktorDetay" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HastaDetay_aspnet_Membership" Association="Self.FK_HastaDetay_aspnet_Membership">
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+      <End Role="HastaDetay" EntitySet="HastaDetay" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

@@ -44,10 +44,8 @@ namespace Bagisla.Controllers
                         BagisciRepository br = new BagisciRepository();
                         model.BD.ID = Guid.Parse(user.ProviderUserKey.ToString());
                         br.BagisciDetayEkle(model.BD);
-                        
-
                         Roles.AddUserToRole(user.Email, "Bagisci");
-                        return RedirectToAction("Login");
+                        return RedirectToAction("LogOn");
                     case MembershipCreateStatus.InvalidUserName:
                         break;
                     case MembershipCreateStatus.InvalidPassword:
