@@ -259,3 +259,11 @@ C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\New
 C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Net.Http.Formatting.xml
 C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Http.xml
 C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Http.WebHost.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Newtonsoft.Json.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Net.Http.Formatting.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Http.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Http.WebHost.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Newtonsoft.Json.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Net.Http.Formatting.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Http.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Http.WebHost.xml
