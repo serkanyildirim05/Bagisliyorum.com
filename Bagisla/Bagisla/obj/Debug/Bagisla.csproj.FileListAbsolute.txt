@@ -246,7 +246,6 @@ C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Sys
 C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Webpages.Razor.xml
 C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Helpers.xml
 C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Mvc.xml
-C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\obj\Debug\Bagisla.csprojResolveAssemblyReference.cache
 C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\obj\Debug\Bagisla.dll
 C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\obj\Debug\Bagisla.pdb
 C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\obj\Debug\Bagisla.csproj.CoreCompileInputs.cache
@@ -267,3 +266,4 @@ C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Newtonsoft.Js
 C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Net.Http.Formatting.xml
 C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Http.xml
 C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Http.WebHost.xml
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\obj\Debug\Bagisla.csprojResolveAssemblyReference.cache

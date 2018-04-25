@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="BagislarDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="BagislarDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="aspnet_Applications">
           <Key>
             <PropertyRef Name="ApplicationId" />
@@ -149,6 +149,7 @@
           <Property Name="DogumTarihi" Type="date" />
           <Property Name="BagisSayisi" Type="int" />
           <Property Name="ProfilFoto" Type="varchar(max)" />
+          <Property Name="Bagis" Type="money" />
         </EntityType>
         <EntityType Name="DoktorDetay">
           <Key>
@@ -184,6 +185,7 @@
           <Property Name="Meslek" Type="varchar" MaxLength="20" />
           <Property Name="Fotograf" Type="varchar(max)" />
           <Property Name="BagisSayisi" Type="int" />
+          <Property Name="Bagis" Type="money" />
         </EntityType>
         <EntityType Name="Mesajlar">
           <Key>
@@ -457,8 +459,7 @@
             <End Role="HastaDetay" EntitySet="HastaDetay" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="BagislarDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -622,6 +623,7 @@
           <Property Name="BagisSayisi" Type="Int32" />
           <Property Name="ProfilFoto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="aspnet_Membership" Relationship="Self.FK_BagisciDetay_aspnet_Membership" FromRole="BagisciDetay" ToRole="aspnet_Membership" />
+          <Property Name="Bagis" Type="Decimal" Precision="19" Scale="4" />
         </EntityType>
         <EntityType Name="DoktorDetay">
           <Key>
@@ -659,6 +661,7 @@
           <Property Name="Fotograf" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="BagisSayisi" Type="Int32" />
           <NavigationProperty Name="aspnet_Membership" Relationship="Self.FK_HastaDetay_aspnet_Membership" FromRole="HastaDetay" ToRole="aspnet_Membership" />
+          <Property Name="Bagis" Type="Decimal" Precision="19" Scale="4" />
         </EntityType>
         <EntityType Name="Mesajlar">
           <Key>
@@ -1048,6 +1051,7 @@
           <EntitySetMapping Name="BagisciDetays">
             <EntityTypeMapping TypeName="BagislarDBModel.BagisciDetay">
               <MappingFragment StoreEntitySet="BagisciDetay">
+                <ScalarProperty Name="Bagis" ColumnName="Bagis" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Ad" ColumnName="Ad" />
                 <ScalarProperty Name="Soyad" ColumnName="Soyad" />
@@ -1080,6 +1084,7 @@
           <EntitySetMapping Name="HastaDetays">
             <EntityTypeMapping TypeName="BagislarDBModel.HastaDetay">
               <MappingFragment StoreEntitySet="HastaDetay">
+                <ScalarProperty Name="Bagis" ColumnName="Bagis" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Ad" ColumnName="Ad" />
                 <ScalarProperty Name="Soyad" ColumnName="Soyad" />

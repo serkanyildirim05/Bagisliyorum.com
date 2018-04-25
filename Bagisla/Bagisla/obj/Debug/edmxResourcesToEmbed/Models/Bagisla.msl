@@ -136,6 +136,7 @@
     <EntitySetMapping Name="BagisciDetays">
       <EntityTypeMapping TypeName="BagislarDBModel.BagisciDetay">
         <MappingFragment StoreEntitySet="BagisciDetay">
+          <ScalarProperty Name="Bagis" ColumnName="Bagis" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Ad" ColumnName="Ad" />
           <ScalarProperty Name="Soyad" ColumnName="Soyad" />
@@ -168,6 +169,7 @@
     <EntitySetMapping Name="HastaDetays">
       <EntityTypeMapping TypeName="BagislarDBModel.HastaDetay">
         <MappingFragment StoreEntitySet="HastaDetay">
+          <ScalarProperty Name="Bagis" ColumnName="Bagis" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Ad" ColumnName="Ad" />
           <ScalarProperty Name="Soyad" ColumnName="Soyad" />

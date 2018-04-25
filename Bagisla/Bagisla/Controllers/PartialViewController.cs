@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace Bagisla.Controllers
 {
+    [ChildActionOnly]
     public class PartialViewController : Controller
     {
         // GET: PartialView

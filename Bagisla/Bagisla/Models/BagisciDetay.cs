@@ -23,6 +23,7 @@ namespace Bagisla.Models
         public Nullable<System.DateTime> DogumTarihi { get; set; }
         public Nullable<int> BagisSayisi { get; set; }
         public string ProfilFoto { get; set; }
+        public Nullable<decimal> Bagis { get; set; }
     
         public virtual aspnet_Membership aspnet_Membership { get; set; }
     }

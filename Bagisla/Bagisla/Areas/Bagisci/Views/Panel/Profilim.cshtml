@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Profilim";
+    Layout = "~/Areas/Bagisci/Views/Shared/_LayoutBagis.cshtml";
+}
+@model Bagisla.Models.BagisciDetay
+
+
+<h2>Profilim</h2>
+
+@using (Html.BeginForm("", "", FormMethod.Post))
+{
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="http://babyinfoforyou.com/wp-content/uploads/2014/10/avatar-300x300.png" class="img-circle img-responsive"> </div>
+
+            <!--<div class="col-xs-10 col-sm-10 hidden-md hidden-lg"> <br>
+              <dl>
+                <dt>DEPARTMENT:</dt>
+                <dd>Administrator</dd>
+                <dt>HIRE DATE</dt>
+                <dd>11/12/2013</dd>
+                <dt>DATE OF BIRTH</dt>
+                   <dd>11/12/2013</dd>
+                <dt>GENDER</dt>
+                <dd>Male</dd>
+              </dl>
+            </div>-->
+            @Html.HiddenFor(m=>m.ID)
+            <div class=" col-md-9 col-lg-9 ">
+                <table class="table table-user-information">
+                    <tbody>
+                        <tr>
+                            <td>Ad :</td>
+                            <td> @Html.TextBoxFor(model => model.Ad)</td>
+                        </tr>
+                        <tr>
+                            <td>Soyad</td>
+                            <td>@Html.TextBoxFor(model => model.Soyad)</td>
+                        </tr>
+                        <tr>
+                            <td>Doğum Tarihi</td>
+                            <td>@Html.TextBoxFor(model => model.DogumTarihi)</td>
+                        </tr>
+
+                        <tr>
+                        <tr>
+                            <td>Adres</td>
+                            <td>@Html.TextBoxFor(model => model.Adres)</td>
+                        </tr>
+                        <tr>
+                            <td>Meslek</td>
+                            <td>@Html.TextBoxFor(model => model.Meslek)</td>
+                        </tr>
+
+
+
+
+                    </tbody>
+                </table>
+                <button class="form-control btn btn-success"> Kaydet</button>
+            </div>
+        </div>
+    </div>
+
+
+
+}
+
+

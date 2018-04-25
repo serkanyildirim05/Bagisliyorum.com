@@ -45,7 +45,8 @@ namespace Bagisla.Controllers
                         model.BD.ID = Guid.Parse(user.ProviderUserKey.ToString());
                         br.BagisciDetayEkle(model.BD);
                         Roles.AddUserToRole(user.Email, "Bagisci");
-                        return RedirectToAction("LogOn");
+                        FormsAuthentication.SetAuthCookie(model.User.Email, false);
+                        return RedirectToAction("Index","Bagisci/Panel");
                     case MembershipCreateStatus.InvalidUserName:
                         break;
                     case MembershipCreateStatus.InvalidPassword:
@@ -70,7 +71,10 @@ namespace Bagisla.Controllers
                         break;
                     default:
                         break;
+                        
+
                 }
+                
               
             }
             else
@@ -104,6 +108,7 @@ namespace Bagisla.Controllers
                 {
                     case MembershipCreateStatus.Success:
                         HastaRepository hr = new HastaRepository();
+                        model.HD.ID = Guid.Parse(user.ProviderUserKey.ToString());
                         hr.HastaDetayEkle(model.HD);
                         Roles.AddUserToRole(user.Email, "Hasta");
                         return RedirectToAction("Login");
@@ -208,5 +213,14 @@ namespace Bagisla.Controllers
             }
             return View(model);
         }
+        public ActionResult LogOut()
+        {
+            FormsAuthentication.SignOut();
+            Roles.DeleteCookie();
+            Session.Clear();
+            return RedirectToAction("Index","Home");
+           
+        }
+
     }
 }

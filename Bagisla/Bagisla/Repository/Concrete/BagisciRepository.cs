@@ -26,5 +26,16 @@ namespace Bagisla.Repository.Concrete
             _BagiscilarUnitofWork.SaveChanges();
          
         }
+        public BagisciDetay GetBagisciDetay(string email) {
+            return _BagiscilarRepository.Get(m=>m.aspnet_Membership.LoweredEmail==email);
+        }
+        public BagisciDetay UpdateDetay(BagisciDetay entity)
+        {
+            entity.aspnet_Membership.UserId= entity.ID;
+            _BagiscilarRepository.Updete(entity);
+            _BagiscilarUnitofWork.SaveChanges();
+
+            return _BagiscilarRepository.Get(m=>m.ID==entity.ID);
+        }
     }
 }

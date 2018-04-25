@@ -329,6 +329,7 @@
     <Content Include="Content\css\lib\sweetalert\sweetalert.css" />
     <Content Include="Content\css\lib\toastr\toastr.min.css" />
     <Content Include="Content\css\lib\vector-map\jqvmap.min.css" />
+    <Content Include="Content\css\Profil.css" />
     <Content Include="Content\css\RegisterPage.css" />
     <Content Include="Content\css\skins\default.css" />
     <Content Include="Content\css\skins\skin-app-landing.css" />
@@ -2435,6 +2436,8 @@
     <Content Include="Content\js\theme.js" />
     <Content Include="Content\js\views\view.contact.js" />
     <Content Include="Content\js\views\view.home.js" />
+    <Content Include="Content\logo.png" />
+    <Content Include="Content\ProfilPic\user.ico" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\vendor\animate\animate.min.css" />
     <Content Include="Content\vendor\bootpag\bootpag.js" />
@@ -2696,6 +2699,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Bagisci\BagisciAreaRegistration.cs" />
     <Compile Include="Areas\Bagisci\Controllers\PanelController.cs" />
+    <Compile Include="Areas\Bagisci\Controllers\ProfilPartialViewController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PartialViewController.cs" />
@@ -2778,6 +2782,7 @@
     <Compile Include="Repository\Concrete\EFUnitOfWork.cs" />
     <Compile Include="Repository\Concrete\HastaRepository.cs" />
     <Compile Include="Repository\Concrete\IletisimRepository.cs" />
+    <Compile Include="Repository\Concrete\ProfilRepository.cs" />
     <Compile Include="Repository\Concrete\SSSRepository.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -3398,6 +3403,9 @@
     <Content Include="Areas\Bagisci\Views\web.config" />
     <Content Include="Areas\Bagisci\Views\Shared\_LayoutBagis.cshtml" />
     <Content Include="Areas\Bagisci\Views\Panel\Index.cshtml" />
+    <Content Include="Areas\Bagisci\Views\Panel\BagisYap.cshtml" />
+    <Content Include="Areas\Bagisci\Views\ProfilPartialView\PVProfil.cshtml" />
+    <Content Include="Areas\Bagisci\Views\Panel\Profilim.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -3408,6 +3416,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Bagisci\Models\" />
+    <Folder Include="Areas\Hasta\" />
     <Folder Include="Views\Doktor\" />
     <Folder Include="Views\Login\" />
   </ItemGroup>

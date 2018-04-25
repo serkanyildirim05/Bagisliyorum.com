@@ -144,6 +144,7 @@
     <Property Name="DogumTarihi" Type="date" />
     <Property Name="BagisSayisi" Type="int" />
     <Property Name="ProfilFoto" Type="varchar(max)" />
+    <Property Name="Bagis" Type="money" />
   </EntityType>
   <EntityType Name="DoktorDetay">
     <Key>
@@ -179,6 +180,7 @@
     <Property Name="Meslek" Type="varchar" MaxLength="20" />
     <Property Name="Fotograf" Type="varchar(max)" />
     <Property Name="BagisSayisi" Type="int" />
+    <Property Name="Bagis" Type="money" />
   </EntityType>
   <EntityType Name="Mesajlar">
     <Key>

@@ -160,6 +160,7 @@
     <Property Name="BagisSayisi" Type="Int32" />
     <Property Name="ProfilFoto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="aspnet_Membership" Relationship="Self.FK_BagisciDetay_aspnet_Membership" FromRole="BagisciDetay" ToRole="aspnet_Membership" />
+    <Property Name="Bagis" Type="Decimal" Precision="19" Scale="4" />
   </EntityType>
   <EntityType Name="DoktorDetay">
     <Key>
@@ -197,6 +198,7 @@
     <Property Name="Fotograf" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <Property Name="BagisSayisi" Type="Int32" />
     <NavigationProperty Name="aspnet_Membership" Relationship="Self.FK_HastaDetay_aspnet_Membership" FromRole="HastaDetay" ToRole="aspnet_Membership" />
+    <Property Name="Bagis" Type="Decimal" Precision="19" Scale="4" />
   </EntityType>
   <EntityType Name="Mesajlar">
     <Key>

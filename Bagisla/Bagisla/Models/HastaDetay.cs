@@ -28,8 +28,8 @@ namespace Bagisla.Models
         public string Meslek { get; set; }
         public string Fotograf { get; set; }
         public Nullable<int> BagisSayisi { get; set; }
+        public Nullable<decimal> Bagis { get; set; }
     
         public virtual aspnet_Membership aspnet_Membership { get; set; }
-        public virtual aspnet_Membership aspnet_Membership1 { get; set; }
     }
 }

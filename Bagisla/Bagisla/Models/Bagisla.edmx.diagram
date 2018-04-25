@@ -17,7 +17,7 @@
         <EntityTypeShape EntityType="BagislarDBModel.aspnet_WebEvent_Events" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="BagislarDBModel.BagisciDetay" Width="1.5" PointX="5.25" PointY="12.75" IsExpanded="true" />
         <EntityTypeShape EntityType="BagislarDBModel.DoktorDetay" Width="1.5" PointX="5.25" PointY="22.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="BagislarDBModel.HastaDetay" Width="1.5" PointX="5.25" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BagislarDBModel.HastaDetay" Width="1.5" PointX="7.625" PointY="26.25" IsExpanded="true" />
         <EntityTypeShape EntityType="BagislarDBModel.Mesajlar" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="BagislarDBModel.SSS" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="BagislarDBModel.sysdiagram" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
