@@ -1,74 +1,269 @@
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\obj\Debug\Bagisla.csprojResolveAssemblyReference.cache
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\obj\Debug\Bagisla.csproj.CoreCompileInputs.cache
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\ApplicationInsights.config
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Bagisla.dll.config
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Bagisla.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Bagisla.pdb
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Antlr3.Runtime.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\EntityFramework.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\EntityFramework.SqlServer.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.AI.Agent.Intercept.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.AI.DependencyCollector.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.AI.PerfCounterCollector.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.AI.ServerTelemetryChannel.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.AI.Web.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.AI.WindowsServer.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.ApplicationInsights.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.Owin.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.Owin.Security.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Newtonsoft.Json.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Owin.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\System.Web.Helpers.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\System.Web.Mvc.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\System.Web.Optimization.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\System.Web.Razor.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\System.Web.WebPages.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\System.Web.WebPages.Razor.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\WebGrease.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\_DbEntities.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\_DbEntities.pdb
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\_DbEntities.dll.config
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\EntityFramework.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\EntityFramework.SqlServer.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.Owin.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\System.Web.Helpers.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\System.Web.Mvc.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\System.Web.Optimization.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\System.Web.Razor.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\System.Web.WebPages.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\System.Web.WebPages.Razor.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Antlr3.Runtime.pdb
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Newtonsoft.Json.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.Owin.Security.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.ApplicationInsights.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.AI.DependencyCollector.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.AI.ServerTelemetryChannel.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.AI.WindowsServer.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\bin\Microsoft.AI.Web.xml
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\obj\Debug\Bagisla.dll
-C:\Users\Mustafa\Source\Repos\Bagisla\Bagisla\obj\Debug\Bagisla.pdb
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\ApplicationInsights.config
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\roslyn\csc.exe
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\roslyn\vbc.exe
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\roslyn\VBCSCompiler.exe
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\Bagisla.dll.config
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\Bagisla.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\Bagisla.pdb
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\EntityFramework.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\EntityFramework.SqlServer.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\Microsoft.AI.Web.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\Microsoft.ApplicationInsights.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\System.Web.Helpers.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\System.Web.Mvc.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\System.Web.Razor.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\System.Web.Webpages.Deployment.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\System.Web.Webpages.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\System.Web.Webpages.Razor.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\EntityFramework.xml
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\EntityFramework.SqlServer.xml
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\Microsoft.AI.Web.xml
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\Microsoft.ApplicationInsights.xml
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\System.Web.Razor.xml
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\System.Web.Webpages.xml
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\System.Web.Webpages.Deployment.xml
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\System.Web.Webpages.Razor.xml
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\System.Web.Helpers.xml
+C:\Users\immor\Desktop\Bagisla\Bagisla\bin\System.Web.Mvc.xml
+C:\Users\immor\Desktop\Bagisla\Bagisla\obj\Debug\Bagisla.dll
+C:\Users\immor\Desktop\Bagisla\Bagisla\obj\Debug\Bagisla.pdb
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\ApplicationInsights.config
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\roslyn\csc.exe
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\roslyn\vbc.exe
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\roslyn\VBCSCompiler.exe
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\Bagisla.dll.config
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\Bagisla.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\Bagisla.pdb
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\EntityFramework.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\EntityFramework.SqlServer.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\Microsoft.AI.Web.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\Microsoft.ApplicationInsights.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\System.Web.Helpers.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\System.Web.Mvc.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\System.Web.Razor.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\System.Web.Webpages.Deployment.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\System.Web.Webpages.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\System.Web.Webpages.Razor.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\EntityFramework.xml
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\EntityFramework.SqlServer.xml
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\Microsoft.AI.Web.xml
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\Microsoft.ApplicationInsights.xml
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\System.Web.Razor.xml
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\System.Web.Webpages.xml
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\System.Web.Webpages.Deployment.xml
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\System.Web.Webpages.Razor.xml
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\System.Web.Helpers.xml
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\bin\System.Web.Mvc.xml
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\obj\Debug\Bagisla.dll
+C:\Users\immor\Desktop\Proje\Bagisla\Bagisla\obj\Debug\Bagisla.pdb
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\ApplicationInsights.config
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\roslyn\csc.exe
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\roslyn\vbc.exe
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\roslyn\VBCSCompiler.exe
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\Bagisla.dll.config
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\Bagisla.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\Bagisla.pdb
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\EntityFramework.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\EntityFramework.SqlServer.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\Microsoft.AI.Web.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\Microsoft.ApplicationInsights.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\System.Web.Helpers.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\System.Web.Mvc.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\System.Web.Razor.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\System.Web.Webpages.Deployment.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\System.Web.Webpages.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\System.Web.Webpages.Razor.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\EntityFramework.xml
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\EntityFramework.SqlServer.xml
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\Microsoft.AI.Web.xml
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\Microsoft.ApplicationInsights.xml
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\System.Web.Razor.xml
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\System.Web.Webpages.xml
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\System.Web.Webpages.Deployment.xml
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\System.Web.Webpages.Razor.xml
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\System.Web.Helpers.xml
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\bin\System.Web.Mvc.xml
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\obj\Debug\Bagisla.csprojResolveAssemblyReference.cache
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\obj\Debug\Bagisla.csproj.CoreCompileInputs.cache
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\obj\Debug\Bagisla.csproj.CopyComplete
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\obj\Debug\Bagisla.dll
+C:\Users\immor\Desktop\PROJE YENİ DURUM\Bagisla\Bagisla\obj\Debug\Bagisla.pdb
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\ApplicationInsights.config
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\csc.exe
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\vbc.exe
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Bagisla.dll.config
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Bagisla.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Bagisla.pdb
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\EntityFramework.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\EntityFramework.SqlServer.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.AI.Web.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Helpers.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Mvc.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Razor.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Webpages.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Webpages.Razor.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\EntityFramework.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\EntityFramework.SqlServer.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.AI.Web.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Razor.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Webpages.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Webpages.Razor.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Helpers.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Mvc.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\obj\Debug\Bagisla.csproj.CoreCompileInputs.cache
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\obj\Debug\Bagisla.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\obj\Debug\Bagisla.pdb
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\obj\Debug\Bagisla.csprojResolveAssemblyReference.cache
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\ApplicationInsights.config
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\csc.exe
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\vbc.exe
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\VBCSCompiler.exe
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Bagisla.dll.config
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Bagisla.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Bagisla.pdb
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\EntityFramework.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\EntityFramework.SqlServer.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.AI.Web.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.ApplicationInsights.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Helpers.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Mvc.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Razor.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Webpages.Deployment.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Webpages.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Webpages.Razor.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\EntityFramework.xml
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\EntityFramework.SqlServer.xml
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.AI.Web.xml
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.ApplicationInsights.xml
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Razor.xml
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Webpages.xml
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Webpages.Deployment.xml
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Webpages.Razor.xml
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Helpers.xml
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Mvc.xml
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\obj\Debug\Bagisla.csprojResolveAssemblyReference.cache
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\obj\Debug\Bagisla.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\obj\Debug\Bagisla.pdb
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\obj\Debug\Bagisla.csproj.CoreCompileInputs.cache
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\obj\Debug\Bagisla.csproj.CopyComplete
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Newtonsoft.Json.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Net.Http.Formatting.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Http.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Http.WebHost.dll
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\Newtonsoft.Json.xml
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Net.Http.Formatting.xml
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Http.xml
+C:\Users\immor\OneDrive\Belgeler\GitHub\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Http.WebHost.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Newtonsoft.Json.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Net.Http.Formatting.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Http.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Http.WebHost.dll
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\Newtonsoft.Json.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Net.Http.Formatting.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Http.xml
+C:\Users\Mustafa\Source\Repos\Bagisliyorum.com\Bagisla\Bagisla\bin\System.Web.Http.WebHost.xml
