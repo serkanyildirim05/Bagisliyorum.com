@@ -1,183 +1,115 @@
-﻿@model Bagisla.Models.ViewModel.RegisterViewModel
+﻿@model _DbEntities.Models.RegisterViewModel
 @{
+    ViewBag.Title = "Kayıt Ol";
     Layout = null;
 }
-<!DOCTYPE html>
+
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Register</title>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <!------ Include the above in your HEAD tag ---------->
-    <link href="~/Content/css/RegisterPage.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>@ViewBag.Title.</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="~/Content/assets/css/normalize.css">
+    <link rel="stylesheet" href="~/Content/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="~/Content/assets/css/flag-icon.min.css">
+    <link rel="stylesheet" href="~/Content/assets/css/cs-skin-elastic.css">
+    <!-- <link rel="stylesheet" href="~/Content/assets/css/bootstrap-select.less"> -->
+    <link rel="stylesheet" href="~/Content/assets/scss/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+    <link href="~/Content/RegisterRadioBtn.css" rel="stylesheet" />
+    <style type="text/css">
+        .validation-summary-errors li {
+            list-style: none;
+            margin: 0;
+            font-size: 15px;
+            font-style: oblique;
+            padding: 5px -10px 5px 0px;
+        }
+    </style>
 </head>
+<body class="bg-dark">
 
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <div class="panel panel-login">
-                    <div class="panel-heading">
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <a href="#" class="active" id="login-form-link">Bağışçı Olarak</a>
-                            </div>
-                            <div class="col-xs-6">
-                                <a href="#" id="register-form-link">Hasta Olarak</a>
-                            </div>
-                        </div>
-                        <div><h2 class="text-center"> Kayıt Ol</h2></div>
-                        @Html.ValidationSummary(false, "", new { @class = "text-danger" })
-                        <hr>
+    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="sufee-login d-flex align-content-center flex-wrap">
+            <div class="container">
+                <div class="login-content">
+                   
+                    <div class="login-logo">
+                        <a href="index.html">
+                            <img class="align-content" src="images/logo.png" alt="">
+                        </a>
                     </div>
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-lg-12">
-                             
-                                @using (Html.BeginForm("BagisciKayit", "Account", FormMethod.Post, new { id = "login-form", style = "" }))
-                                {
-                                    @Html.AntiForgeryToken()
-                                    /**/
-
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <div class="col-md-12" style="padding-bottom:10px">
-
-                                                @Html.TextBoxFor(m => m.User.Email, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Email Giriniz.", required = "required" })
-                                               
-                                            </div>
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.PasswordFor(m => m.User.Password, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Parolo Giriniz.", required = "required" })
-                                    
-                                            </div>
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.PasswordFor(m => m.User.ConfirmPassword, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Parolo Tekrar Giriniz.", required = "required" })
-                                         
-                                            </div>
-
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.TextBoxFor(m => m.BD.Ad, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Ad Giriniz.", required = "required" })
-                                              
-                                            </div>
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.TextBoxFor(m => m.BD.Soyad, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Soyad Giriniz", required = "required" })
-                                        
-                                            </div>
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.TextBoxFor(m => m.BD.Tel, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Telefon Numaranızı Giriniz", required = "required" })
-                                             
-                                            </div>
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.TextBoxFor(m => m.BD.Meslek, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Meslek Giriniz", required = "required" })
-                                               
-                                            </div>
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.TextBoxFor(m => m.BD.Adres, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Adres Giriniz", required = "required" })
-                                            
-                                            </div>
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.TextBoxFor(m => m.BD.DogumTarihi, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Doğum Tarihi Giriniz", required = "required" })
-                                             
-
-                                            </div>
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                <button type="submit" class="form-control btn btn-success"><span class="glyphicon glyphicon-log-in"></span> Kayıt Ol</button>
-                                            </div>
-                                        </div>
+                    <div class="login-form">
+                        <form>
+                            @Html.ValidationSummary(false, "", new { @class = "text-danger text-center" })
+                            <div class="form-group">
+                                <div class="funkyradio">
+                                    <div class="funkyradio-default">
+                                        <input type="radio" name="radio" id="radio1" value="Hasta" />
+                                        <label for="radio1">Hasta Olarak Kayıt Ol</label>
+                                    </div>
+                                    <div class="funkyradio-primary">
+                                        <input type="radio" name="radio" id="radio2" value="Bagisci" />
+                                        <label for="radio2">Bağışçı Olarak Kayıt Ol</label>
                                     </div>
 
-                                }
-                                @using (Html.BeginForm("HastaKayit", "Account", FormMethod.Post, new { id = "register-form", style = "display:none" }))
-                                {
-                                    /**/
-                                    @Html.AntiForgeryToken()
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.TextBoxFor(m => m.User.Email, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Email Giriniz.", required = "required" })
-                                              
-                                            </div>
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.PasswordFor(m => m.User.Password, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Parolo Giriniz.", required = "required" })
-                                           
-                                            </div>
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.PasswordFor(m => m.User.ConfirmPassword, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Parolo Tekrar Giriniz.", required = "required" })
-                                             
-                                            </div>
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.TextBoxFor(m => m.HD.Ad, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Ad Giriniz", required = "required" })
-                                              
-                                            </div>
-
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.TextBoxFor(m => m.HD.Soyad, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Soyad Giriniz", required = "required" })
-                                           
-                                            </div>
-
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.TextBoxFor(m => m.HD.Yas, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Yaş Giriniz", required = "required" })
-                                              
-
-
-                                            </div>
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.TextBoxFor(m => m.HD.Cinsiyet, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Cinsiyet", required = "required" })
-                                         
-                                            </div>
-
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.TextBoxFor(m => m.HD.DogumTarihi, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Doğum Tarihi Giriniz", required = "required" })
-                                             
-                                            </div>
-
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.TextBoxFor(m => m.HD.KanGrubu, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Kan Grubu", required = "required" })
-                                        
-                                            </div>
-
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.TextBoxFor(m => m.HD.SaglikDurumu, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Sağlık Durumu Giriniz", required = "required" })
-                                           
-                                            </div>
-
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.TextBoxFor(m => m.HD.Meslek, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Meslek Giriniz", required = "required" })
-                                               
-                                            </div>
-
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.TextBoxFor(m => m.HD.Adres, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "Adres Giriniz", required = "required" })
-                                             
-                                            </div>
-
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.TextBoxFor(m => m.HD.Il, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "İl", required = "required" })
-
-                                            </div>
-
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                @Html.TextBoxFor(m => m.HD.Ilce, new { data_msg_required = "Gerekli", @class = "form-control", placeholder = "İlçe", required = "required" })
-                                            
-                                            </div>
-                                            <div class="col-md-12" style="padding-bottom:10px">
-                                                <button type="submit" class="form-control btn btn-success"><span class="glyphicon glyphicon-log-in"></span> Kayıt Ol</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                }
-
+                                </div>
                             </div>
-                        </div>
+                            <div class="form-group">
+                                <label>E-Posta</label>
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                            </div>
+                            <div class="form-group">
+                                <label>Ad</label>
+                                @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                            </div>
+                            <div class="form-group">
+                                <label>Soyad</label>
+                                @Html.TextBoxFor(m => m.Surname, new { @class = "form-control" })
+                            </div>
+                            <div class="form-group">
+                                <label>Telefon</label>
+                                @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control", maxlength = "11", placeholder = "05XX-XXX-XX-XX" })
+                            </div>
+                            <div class="form-group">
+                                <label>Şifre</label>
+                                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                            </div>
+                            <div class="form-group">
+                                <label>Şifre Tekrar</label>
+                                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Agree the terms and policy
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Register</button>
+                            <div class="register-link m-t-15 text-center">
+                                <p>Already have account ? <a href="#"> Sign in</a></p>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    }
 
-    <script src="~/Content/js/RegisterPage.js"></script>
+    <script src="~/Content/assets/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="~/Content/assets/js/popper.min.js"></script>
+    <script src="~/Content/assets/js/plugins.js"></script>
+    <script src="~/Content/assets/js/main.js"></script>
+
+
 </body>
 </html>
